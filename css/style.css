@@ -1,161 +1,120 @@
-/*font-family: 'Shadows Into Light', cursive;
- font-family: 'Indie Flower', cursive;
-*/
+body,html{
+    height: 100%;
+  }
 
-#contenidos{
-	width: 1000px;
-	height: auto;
-	margin: auto;
-	position: relative;
-}
+  nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+      -moz-transition: margin 200ms ease-out;
+      -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+  }
 
+  .main{
+    padding: 10px 10px 0 10px;
+  }
 
-/*ETIQUETAS*/
-body{	
-background-image: url("");
-background-repeat: no-repeat;
-background-size: cover;
-}
+ @media (min-width: 765px) {
 
-h1{
-font-family: 'Franklin Gothic Heavy';
-color: white;
-margin-left: 10px;
-font-size: 55px;
-text-align: center; 
-}
+    .main{
+      position: absolute;
+      width: calc(100% - 40px); 
+      margin-left: 40px;
+      float: right;
+    }
 
-h2{
-font-family: 'Franklin Gothic Book', bold;
-color: white;
-margin-left: 10px;
-font-size: 20px;
-text-align: left; 
-}
+    nav.sidebar:hover + .main{
+      margin-left: 200px;
+    }
 
-h3{
-font-family: 'Franklin Gothic Book', cursive;;
-color: white;
-font-size: 30px;
-text-align: center; 
-}
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
 
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+    }
+    
+    nav.sidebar a{
+      padding-right: 13px;
+    }
 
-header{
-	width: 1000px;
-	height: 123px;	
-}
+    nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+    }
 
-nav{
-	width: 995px;	
-	height: 50px;
-	background: #FFFFFF
-	border: solid;
-	border-color: #b3b3b3
-	border-radius: 10px;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+    nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+    }
 
-}
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
 
-ul{
-	width: auto;
-	padding-top: 4px;
-}
-ul ul{
-	margin: 0;
-	display: none;
-}
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+    }
 
-li{
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-	margin: 4px
-}
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+      color: #777;
+    }
 
-li li a{
-	
-	text-decoration: none;
-}
+    nav.sidebar{
+      width: 200px;
+      height: 100%;
+      margin-left: -160px;
+      float: left;
+      margin-bottom: 0px;
+    }
 
-li li{
-	
-	float: left;
-	list-style-type: none;
-}
+    nav.sidebar li {
+      width: 100%;
+    }
 
-li ul{
-	width: 200px;
-	display: none;
-	background: #FFFFFF;
-	position: absolute;
-	margin: 0;
-	border-radius: 10px;
-}
+    nav.sidebar:hover{
+      margin-left: 0px;
+    }
 
-li:hover ul{
-	display: block;
-}
+    .forAnimate{
+      opacity: 0;
+    }
+  }
+   
+  @media (min-width: 1330px) {
 
-a{
-	text-decoration: none;
-	font-size: 18px;
-	color: #005883;	
+    .main{
+      width: calc(100% - 200px);
+      margin-left: 200px;
+    }
 
-}
+    nav.sidebar{
+      margin-left: 0px;
+      float: left;
+    }
 
+    nav.sidebar .forAnimate{
+      opacity: 1;
+    }
+  }
 
-section{
-	width: 700px;
-	background: #b3b3b3;
-	height: auto;
-	float: left;
-	margin-top: 20px;
-	border-radius: 5px;
-}
-aside{
+  nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+  }
 
-	width: 280px;
-	background: #b3b3b3;
-	height: auto;
-	float: left;
-	margin-left: 20px;
-	margin-top: 20px;
-	border-radius: 5px;
-}
-
-footer{
-width: 1000px;
-height: 70px;
-background: maroon;
-float: left;
-margin-top: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-}
-
-p{
-
-	font-size: 15px;
-	font-weight: bolder;
-	line-height: 24px;
-	padding: 10px;
-	text-align: justify;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  nav:hover .forAnimate{
+    opacity: 1;
+  }
+  section{
+    padding-left: 15px;
+  }
+  
+ 
